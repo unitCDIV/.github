@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/unitCDIV/.github/security/advisories/new
+    about: Report privately. Never open a public issue for a security problem.
+  - name: Start learning
+    url: https://unitcdiv.fairytale.ai/curriculum/
+    about: The CDIV curriculum, courses and lessons.
+  - name: Getting help
+    url: https://github.com/unitCDIV/.github/blob/main/SUPPORT.md
+    about: Where to ask what, and what we can't help with.

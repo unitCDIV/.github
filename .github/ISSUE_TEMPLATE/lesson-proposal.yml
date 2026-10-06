@@ -1,0 +1,65 @@
+name: Lesson proposal
+description: Offer to write or review a lesson, or suggest a new one.
+title: "[Lesson] "
+labels: ["lesson-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for offering to help. We agree on scope here before anyone writes, so no effort is wasted. See the [contributing guide](https://github.com/unitCDIV/.github/blob/main/CONTRIBUTING.md).
+  - type: dropdown
+    id: course
+    attributes:
+      label: Course
+      options:
+        - CDIV-F101 Security Fundamentals
+        - CDIV-F201 Threat Landscape & Attack Surfaces
+        - CDIV-F301 Secure Architecture & Governance
+        - CDIV-O101 Security Operations & Monitoring
+        - CDIV-O201 Vulnerability Management & Threat Hunting
+        - CDIV-O301 Incident Response & Communication
+        - CDIV-X101 Assessment Planning & Scoping
+        - CDIV-X201 Reconnaissance & Vulnerability Discovery
+        - CDIV-X301 Exploitation, Post-Exploitation & Reporting
+        - Not sure / new course idea
+    validations:
+      required: true
+  - type: input
+    id: lesson
+    attributes:
+      label: Lesson
+      description: The lesson title from the course syllabus, or your proposed title.
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: I'd like to…
+      options:
+        - Write this lesson
+        - Review this lesson
+        - Suggest it for someone else to write
+    validations:
+      required: true
+  - type: textarea
+    id: objectives
+    attributes:
+      label: Learning objectives
+      description: Three things the reader will be able to do afterwards, each starting with a verb.
+      placeholder: |
+        - Explain …
+        - Build …
+        - Compare …
+  - type: textarea
+    id: example
+    attributes:
+      label: Worked example and exercise
+      description: The example you'd use, and how the exercise adds to the course artifact. Examples must run on free, public tools.
+  - type: checkboxes
+    id: policy
+    attributes:
+      label: Offensive content policy
+      description: Required for Offensive (CDIV-X) lessons. Please read the policy in CONTRIBUTING.md.
+      options:
+        - label: Every exercise runs entirely in the reader's own isolated lab, and no live third-party system, host or address is named or targeted.
+        - label: This proposal is not an Offensive (CDIV-X) lesson.

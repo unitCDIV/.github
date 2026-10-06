@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Unit 404">
+  <!-- Placeholder grayscale mark until the final CDIV logo is supplied (open item #1). -->
+  <rect width="64" height="64" rx="10" fill="#0D0D10"/>
+  <rect x="5" y="5" width="54" height="54" rx="6" fill="none" stroke="#9A9AA0" stroke-width="2"/>
+  <text x="32" y="40" text-anchor="middle" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#FFFFFF">404</text>
+</svg>
